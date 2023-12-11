@@ -1,0 +1,14 @@
+{
+  "name": "crumcakesbakery",
+  "version": "1.0.0",
+  "description": "Website for Crum Cakes Bakery in Omaha, NE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Trevor McLaurine",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}

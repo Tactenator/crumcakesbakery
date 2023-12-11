@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Crum Cakes Bakery</title>
+</head>
+<body>
+    
+    <!-- Above the Navbar-->
+    <section>
+        <!-- Small bar on top to show address and telephone number-->
+        <div id="top-info-container" class="flex flex-row justify-between px-40 py-5">
+            <div class="flex flex-row gap-10">
+                <div class="">763 N 114th St, Omaha, NE 68154</div>
+                <div>(402) 850-5941</div>
+            </div>
+            <!-- Showing if the store is opened or not. Gonna require Javascript-->
+            <div>
+                <div id="isOpen-container">We are open!</div>
+            </div>
+        </div> 
+
+    </section>
+
+
+    <!-- Navbar -->
+    <nav>
+        <ul class="flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-xl font-bold">
+            <a href="#">Home</a>
+            <a href="#">Order</a>
+            <div id="logo-holder">
+                <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20" src="./public/img/logo.jpg" alt="Crum Cakes Bakery">
+            </div>
+            <a href="#">Products</a>
+            <a href="#">What's New?</a>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="h-[70vh] bg-no-repeat bg-center bg-cover relative" 
+    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./public/img/bg-1.jpg') ">
+        <!-- Hero Text : Eventually this needs to be a slideshow -->
+        <div class="absolute top-1/4 left-1/2 transform -translate-x-1/2 translate-y-0 text-center text-white flex flex-col gap-10">
+            <h1 class="text-4xl font-bold">Every Batch From Scratch</h1>
+            <p class="text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero natus eveniet ducimus</p>
+            <div class="">
+                <a href="#" class="bg-primary rounded-xl text-xl px-5 py-4">See What's Baking</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings Section. Something about cakes perhaps? Other Cookies? I don't know yet. -->
+
+    <section class="grid px-20 py-10">
+
+        <div id="grid-item" class="relative ">
+            <img src="./public/img/wedding-cake.jpg" alt="wedding cake">
+            <div id="item-text" class="absolute top-5  text-black">Test Text</div>
+        </div>
+
+    </section>
+</body>
+</html>
