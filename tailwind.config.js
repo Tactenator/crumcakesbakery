@@ -16,7 +16,8 @@ module.exports = {
         'secondary': '#eee6e2',
         'accent': '#a73939',
         'blurb': '#f2f2f2', 
-        'link': '#2200CC'
+        'link': '#2200CC',
+        'footer': "#282c2f"
        },
        backgroundImage: {
         'hero-1': "./public/img/bg-1.jpg"
