@@ -20,7 +20,10 @@ module.exports = {
        },
        backgroundImage: {
         'hero-1': "./public/img/bg-1.jpg"
-       }
+       },
+       fontFamily: {
+        'fredoka': ['Fredoka', 'sans-serif']
+      },
        
     },
   },
