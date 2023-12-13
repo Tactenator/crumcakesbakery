@@ -10,12 +10,11 @@ module.exports = {
         'background': '#fafafa'
       },
       colors: {
-        'text': '#260d0d',
-        'background': '#fafafa',
-        'primary': '#c24c4c',
-        'secondary': '#eee6e2',
-        'accent': '#a73939',
-        'blurb': '#f2f2f2', 
+        'text': '#090608',
+        'background': '#fdfcfd',
+        'primary': '#f782b9',
+        'secondary': '#fcf683',
+        'accent': '#44f8c2', 
         'link': '#2200CC',
         'footer': "#282c2f"
        },
