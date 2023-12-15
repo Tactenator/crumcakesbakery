@@ -62,11 +62,11 @@
     <!-- Small about blurb-->
     <section id="blurb" class="px-20 py-10 bg-link">
         <div class="flex flex-row items-center justify-center">
-            <div id="about-blurb" class="flex flex-col items-center">
-                <h2 class="text-xl text-left">Omaha Nebraska</h2>
-                <h1 class="text-3xl">Crum Cakes Bakery</h1>
-                <span class="text-lg">Made with C.A.R.E</span>
-                <p class="w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nisi cumque voluptatem inventore omnis architecto ducimus dicta, atque autem veritatis eos possimus, vitae vel hic repudiandae quia recusandae odit voluptates?</p>
+            <div id="about-blurb" class="flex flex-col items-center text-white">
+                <h2 class="text-2xl text-left">Omaha Nebraska</h2>
+                <h1 class="text-4xl">Crum Cakes Bakery</h1>
+                <span class="text-xl">Made with C.A.R.E</span>
+                <p class="w-1/2 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nisi cumque voluptatem inventore omnis architecto ducimus dicta, atque autem veritatis eos possimus, vitae vel hic repudiandae quia recusandae odit voluptates?</p>
             </div>
 
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
@@ -95,7 +95,7 @@
                 </div>
                 <div class="flex justify-center items-center pt-4">
                     <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                        <span class="text-black hover:text-gray-600 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                             <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
                             </svg>
@@ -103,7 +103,7 @@
                         </span>
                     </button>
                     <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                        <span class="text-black hover:text-gray-600 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                             <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
@@ -118,7 +118,7 @@
 
     <!-- Offerings Section. Something about cakes perhaps? Other Cookies? I don't know yet. -->
 
-    <section class="px-20 py-10">
+    <section class="px-20 py-10 relative">
 
         <div class="w-full flex flex-col justify-center items-center pb-10">
             <div>
@@ -126,7 +126,12 @@
             </div>
             <h1 class="text-3xl font-bold">Our Creations</h1>
         </div>
-
+        <div class="absolute left-0 bottom-40 -z-10">
+            <img src="./public/img/left-gallery-bg.png" alt="Small cupcakes and flowers">
+        </div>
+        <div class="absolute right-0 top-0 -z-10 transform -scale-x-100">
+            <img src="./public/img/left-gallery-bg.png" alt="Small cupcakes and flowers">
+        </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="grid gap-4">
                 <div class="flex">
@@ -179,7 +184,7 @@
     <!-- Contact and Facebook Blurb -->
 
     <section class="grid grid-cols-2 justify-center items-center relative">
-        <div class="px-40 py-20 text-center flex flex-col" 
+        <div class="px-40 py-20 text-center flex flex-col items-stretch justify-stretch" 
         style="background: linear-gradient(rgba(247, 130, 185,0.8), rgba(247, 130, 185,0.8)), url('./public/img/18106033.jpg'); 
         background-repeat: no-repeat; background-position: center; background-size: cover;">
             <h1 class="text-link font-bold text-4xl">Keep up with what's new!</h1>
@@ -191,7 +196,7 @@
         <div class="absolute left-1/2 transform -translate-x-1/2">
             <img width="500" height="500" src="./public/img/pink-cake.png" alt="Pink Cake with a lollipop on top">
         </div>
-        <div class="px-40 py-20 text-center flex flex-col" 
+        <div class="px-40 py-20 text-center flex flex-col items-stretch justify-stretch" 
         style="background: linear-gradient(rgba(68, 248, 194,0.5), rgba(68, 248, 194,0.5)), url('./public/img/18106033.jpg'); 
         background-repeat: no-repeat; background-position: center; background-size: cover;">
             <h1 class="text-link font-bold text-4xl">Customer Cakes</h1>
