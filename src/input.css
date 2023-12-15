@@ -8,12 +8,10 @@
   src: url('../public/fonts/Fredoka-Regular.ttf');
 }
 
-#hero {
-    --mask:
-      radial-gradient(1.19rem at 50% 1.65rem,#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 51% repeat-x,
-      radial-gradient(1.19rem at 50% -0.65rem,#0000 99%,#000 101%) 50% 1rem/4rem calc(51% - 1rem) repeat-x,
-      radial-gradient(1.19rem at 50% calc(100% - 1.65rem),#000 99%,#0000 101%) calc(50% - 2rem) 100%/4rem 51% repeat-x,
-      radial-gradient(1.19rem at 50% calc(100% + 0.65rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem calc(51% - 1rem) repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+#hero, #blurb {
+  --mask:
+  radial-gradient(1.19rem at 50% calc(100% - 1.65rem),#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 100%,
+  radial-gradient(1.19rem at 50% calc(100% + 0.65rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem 100% repeat-x;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
   }

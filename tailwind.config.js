@@ -13,9 +13,9 @@ module.exports = {
         'text': '#090608',
         'background': '#fdfcfd',
         'primary': '#f782b9',
-        'secondary': '#fcf683',
-        'accent': '#44f8c2', 
-        'link': '#2200CC',
+        'secondary': '#F3F782',
+        'accent': '#82F7C1', 
+        'link': '#8682F7',
         'footer': "#282c2f"
        },
        backgroundImage: {

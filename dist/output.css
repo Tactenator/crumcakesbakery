@@ -793,6 +793,10 @@ video {
   gap: 10rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -814,6 +818,11 @@ video {
   background-color: rgb(40 44 47 / var(--tw-bg-opacity));
 }
 
+.bg-link {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 130 247 / var(--tw-bg-opacity));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(247 130 185 / var(--tw-bg-opacity));
@@ -830,6 +839,11 @@ video {
 
 .p-20 {
   padding: 5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-4 {
@@ -957,7 +971,17 @@ video {
 
 .text-link {
   --tw-text-opacity: 1;
-  color: rgb(34 0 204 / var(--tw-text-opacity));
+  color: rgb(134 130 247 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(247 130 185 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(243 247 130 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -976,6 +1000,16 @@ video {
   outline-offset: 2px;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-700 {
   transition-duration: 700ms;
 }
@@ -990,14 +1024,27 @@ video {
   src: url('../public/fonts/Fredoka-Regular.ttf');
 }
 
-#hero {
+#hero, #blurb {
   --mask:
-      radial-gradient(1.19rem at 50% 1.65rem,#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 51% repeat-x,
-      radial-gradient(1.19rem at 50% -0.65rem,#0000 99%,#000 101%) 50% 1rem/4rem calc(51% - 1rem) repeat-x,
-      radial-gradient(1.19rem at 50% calc(100% - 1.65rem),#000 99%,#0000 101%) calc(50% - 2rem) 100%/4rem 51% repeat-x,
-      radial-gradient(1.19rem at 50% calc(100% + 0.65rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem calc(51% - 1rem) repeat-x;
+  radial-gradient(1.19rem at 50% calc(100% - 1.65rem),#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 100%,
+  radial-gradient(1.19rem at 50% calc(100% + 0.65rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+}
+
+.hover\:bg-accent:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 247 193 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 130 247 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 130 185 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-800:hover {
