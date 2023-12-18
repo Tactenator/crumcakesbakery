@@ -3,9 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Crum Cakes Bakery</title>
 </head>
-<body>
-    
+<body class="font-fredoka">
+    <!-- Above the Navbar-->
+    <section>
+        <!-- Small bar on top to show address and telephone number-->
+        <div id="top-info-container" class="flex flex-row justify-between px-40 py-5 bg-footer text-white">
+            <div class="flex flex-row gap-10">
+                <div class="">763 N 114th St, Omaha, NE 68154</div>
+                <div>(402) 850-5941</div>
+            </div>
+            <!-- Showing if the store is opened or not. Gonna require Javascript-->
+            <div>
+                <div id="isOpen-container">We are open!</div>
+            </div>
+        </div> 
+
+    </section>
+
+
+    <!-- Navbar -->
+    <nav>
+        <ul class="flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-xl font-bold">
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="#">Home</a>
+            <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                class="text-2xl font-bold  relative before:transition-all before:duration-200 hover:cursor-pointer
+                before:absolute before:h-[3px] before:w-0 before:bg-comic-blue before:hover:w-full before:top-full">
+                Order
+                    <div aria-labelledby="dropdownHoverButton" id="dropdownHover" class=" border-4 border-primary z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-80 dark:bg-gray-700">
+                        <ul class="py-3 px-3">
+                            <a href="https://form.jotform.com/71278774684169" class="text-black text-base pb-3">
+                                <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
+                                    <h4 class="font-bold text-lg py-1 px-2 relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Cake Order Form</h4>
+                                    <p class="text-sm py-1 px-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </a> 
+                            <div class="bg-footer w-full mx-auto" style="height: 1px;"></div>
+                            <a href="https://form.jotform.com/233285463471156" class="text-black text-base pb-3">
+                                <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
+                                    <h4 class="font-bold text-lg py-1 px-2  relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Holiday Order Form</h4>
+                                    <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </a>
+                            <div class="bg-footer w-full mx-auto" style="height: 1px;"></div>
+                            <a href="./src/pages/printing.html" class="text-black text-base pb-3">
+                                <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
+                                    <h4 class="font-bold text-lg py-1 px-2 relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Misc. Order Form</h4>
+                                    <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </a>
+                            
+                        </ul>
+                    </div>
+                </div>
+            <div id="logo-holder">
+                <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20" 
+                src="./public/img/logo.jpg" alt="Crum Cakes Bakery">
+            </div>
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="#">Products</a>
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="#">Contact</a>
+        </ul>
+    </nav>
+
+    <section id="Projects"
+    class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+
+    <!--   ✅ Product card 1 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+            <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+                <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">$149</p>
+                    <del>
+                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
+                    </del>
+                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--   🛑 Product card 1 - Ends Here  -->
+
+    <!--   ✅ Product card 2 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+            <img src="https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+                <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">$149</p>
+                    <del>
+                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
+                    </del>
+                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--   🛑 Product card 2- Ends Here  -->
+
+    <!--   ✅ Product card 3 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+            <img src="https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+                <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">$149</p>
+                    <del>
+                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
+                    </del>
+                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--   🛑 Product card 3 - Ends Here  -->
+
+    <!--   ✅ Product card 4 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+            <img src="https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+                <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">$149</p>
+                    <del>
+                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
+                    </del>
+                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--   🛑 Product card 4 - Ends Here  -->
+
+    <!--   ✅ Product card 5 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+            <img src="https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+                <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">$149</p>
+                    <del>
+                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
+                    </del>
+                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--   🛑 Product card 5 - Ends Here  -->
+
+    <!--   ✅ Product card 6 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+            <img src="https://images.unsplash.com/photo-1649261191606-cb2496e97eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+                <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">$149</p>
+                    <del>
+                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
+                    </del>
+                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--   🛑 Product card 6 - Ends Here  -->
+
+</section>
+
+ <!-- Footer -->
+ <footer class="bg-footer p-20 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex  text-left lg:text-left">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl fonat-semibold text-blueGray-700">Crum Cake Bakery</h4>
+            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+              Made with C.A.R.E
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-facebook-square"></i>
+              </button>
+                <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fa-solid fa-envelope" ></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.314262225837!2d-96.0898274!3d41.2663849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f31b26c76cd9%3A0xdc4e73c7345c53c!2sCrum%20Cakes%20Bakery!5e1!3m2!1sen!2sus!4v1702427388612!5m2!1sen!2sus&z=15" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <hr class="my-6 border-blueGray-300">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
+              <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 </html>
