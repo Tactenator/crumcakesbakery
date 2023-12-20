@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Crum Cakes Bakery</title>
 </head>
-<body class="font-fredoka">
+<body class="font-fredoka relative">
     
     <!-- Above the Navbar-->
     <section>
@@ -26,7 +26,7 @@
             </div>
         </div> 
 
-        <div id="mobile-info-container" class="flex flex-row justify-between items-center px-3 sm:px-40 py-5 bg-footer text-white h-20">
+        <div id="mobile-info-container" class="flex flex-row sm:hidden justify-between items-center px-3 sm:px-40 py-5 bg-footer text-white h-20">
             <div class="">Crum Cakes Bakery</div>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -35,7 +35,7 @@
                 </svg>
             </button>
         </nav>
-        <div class="hidden w-full md:w-auto" id="navbar-default">
+        <div class="hidden w-[100vw] absolute top-14 left-0 md:w-auto z-50" id="navbar-default">
             <ul class="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a href="./index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
@@ -129,12 +129,12 @@
 
     <!-- Small about blurb-->
     <section id="blurb" class="px-20 py-20 bg-link">
-        <div class="flex flex-row items-center justify-center">
+        <div class="flex flex-col sm:flex-row items-center justify-center text-center">
             <div id="about-blurb" class="flex flex-col items-center text-white">
                 <h2 class="text-3xl text-left">Omaha Nebraska</h2>
                 <h1 class="text-4xl">Crum Cakes Bakery</h1>
                 <span class="text-xl">Made with C.A.R.E</span>
-                <p class="w-1/2 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nisi cumque voluptatem inventore omnis architecto ducimus dicta, atque autem veritatis eos possimus, vitae vel hic repudiandae quia recusandae odit voluptates?</p>
+                <p class="w-full sm:w-1/2 text-lg mt-10 text-left sm:text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nisi cumque voluptatem inventore omnis architecto ducimus dicta, atque autem veritatis eos possimus, vitae vel hic repudiandae quia recusandae odit voluptates?</p>
             </div>
 
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
@@ -161,10 +161,10 @@
                         <img src="./public/img/gallery-5.jpg" class="absolute block max-w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
                     </div>
                 </div>
-                <div class="flex justify-center items-center pt-4">
+                <div class="flex justify-center items-center pt-4 gap-10 sm:gap-0">
                     <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                         <span class="text-black hover:text-gray-600 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                            <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <svg class="rtl:rotate-180 w-8 h-8 sm:w-5 sm:h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
                             </svg>
                             <span class="sr-only">Previous</span>
@@ -172,7 +172,7 @@
                     </button>
                     <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
                         <span class="text-black hover:text-gray-600 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                            <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <svg class="rtl:rotate-180 w-8 h-8 sm:w-5 sm:h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
                             <span class="sr-only">Next</span>
@@ -186,7 +186,7 @@
 
     <!-- Offerings Section. Something about cakes perhaps? Other Cookies? I don't know yet. -->
 
-    <section class="px-20 pt-10 relative">
+    <section class="px-5 sm:px-20 pt-10 relative">
 
         <div class="w-full flex flex-col justify-center items-center pb-10">
             <div>
@@ -251,27 +251,27 @@
 
     <!-- Contact and Facebook Blurb -->
 
-    <section class="grid grid-cols-2 justify-center items-center relative py-10">
-        <div class="px-40 py-20 text-center flex flex-col items-stretch justify-stretch" 
+    <section class="grid grid-cols-1 sm:grid-cols-2 justify-center items-center relative py-10">
+        <div class="px-10 py-10 sm:px-40 sm:py-20 text-center flex flex-col items-stretch justify-stretch" 
         style="background: linear-gradient(rgba(247, 130, 185,0.8), rgba(247, 130, 185,0.8)), url('./public/img/18106033.jpg'); 
         background-repeat: no-repeat; background-position: center; background-size: cover;">
             <h1 class="text-link font-bold text-4xl">Keep up with what's new!</h1>
             <h3 class="text-secondary text-3xl">Stay Social!</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sapiente at ex quia commodi unde autem cupiditate doloremque 
                 debitis vitae pariatur nihil libero, minima delectus. Enim, cum? Facilis, placeat fugiat.</p>
-            <a class="rounded-xl w-1/2 bg-link text-white mx-auto text-xl px-5 py-4 transition-all duration-200 hover:bg-accent" 
+            <a class="rounded-xl w-1/2 bg-link text-white mx-auto mt-5 sm:mt-0 text-xl px-5 py-4 transition-all duration-200 hover:bg-accent" 
             href="https://www.facebook.com/crumcakesbakery/">Facebook</a>
         </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2">
+        <div class="hidden sm:absolute left-1/2 transform -translate-x-1/2">
             <img width="500" height="500" src="./public/img/pink-cake.png" alt="Pink Cake with a lollipop on top">
         </div>
-        <div class="px-40 py-20 text-center flex flex-col items-stretch justify-stretch" 
+        <div class="px-10 py-10 sm:px-40 sm:py-20 text-center flex flex-col items-stretch justify-stretch" 
         style="background: linear-gradient(rgba(68, 248, 194,0.5), rgba(68, 248, 194,0.5)), url('./public/img/18106033.jpg'); 
         background-repeat: no-repeat; background-position: center; background-size: cover;">
             <h1 class="text-link font-bold text-4xl">Customer Cakes</h1>
             <h3 class="text-primary font-bold text-4xl">For Every Occasion!</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem maxime expedita aliquid eum? Fugiat ratione numquam obcaecati earum alias nesciunt accusantium. Quos autem ratione molestiae nesciunt </p>
-            <a class="rounded-xl w-1/2 bg-link text-white mx-auto text-xl px-5 py-4 transition-all duration-200 hover:bg-primary" href="#">Facebook</a>
+            <a class="rounded-xl w-1/2 bg-link text-white mx-auto mt-5 sm:mt-0 text-xl px-5 py-4 transition-all duration-200 hover:bg-primary" href="#">Facebook</a>
         </div>
     </section>
 
@@ -280,7 +280,7 @@
     <section class="h-[70vh] mt-10 pt-20 relative" 
     style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./public/img/img-bg-1.jpg'); 
     background-repeat: no-repeat; background-position: center; background-size: cover;">
-        <div class="absolute top-1/8 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col gap gap-5 text-center">
+        <div class="absolute top-0 sm:top-1/8 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex flex-col gap gap-5 text-center">
             <div class="text-3xl text-white">What People Are Saying</div>
             <div class="text-xl">&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptas ut quidem incidunt magni odio sapiente porro unde est facilis fugiat&quot;</div>
             <div class="flex flex-col">
@@ -299,9 +299,9 @@
 
 
     <!-- Footer -->
-    <footer class="bg-footer p-20 text-white">
+    <footer class="bg-footer py-10 sm:py-0 sm:p-20 text-white">
         <div class="container mx-auto px-4">
-            <div class="flex  text-left lg:text-left">
+            <div class="flex flex-col sm:flex-row text-left lg:text-left">
               <div class="w-full lg:w-6/12 px-4">
                 <h4 class="text-3xl fonat-semibold text-blueGray-700">Crum Cake Bakery</h4>
                 <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
@@ -348,7 +348,7 @@
                 </div>
               </div>
               <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.314262225837!2d-96.0898274!3d41.2663849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f31b26c76cd9%3A0xdc4e73c7345c53c!2sCrum%20Cakes%20Bakery!5e1!3m2!1sen!2sus!4v1702427388612!5m2!1sen!2sus&z=15" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.314262225837!2d-96.0898274!3d41.2663849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f31b26c76cd9%3A0xdc4e73c7345c53c!2sCrum%20Cakes%20Bakery!5e1!3m2!1sen!2sus!4v1702427388612!5m2!1sen!2sus&z=15" class="w-96 h-40" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <hr class="my-6 border-blueGray-300">
