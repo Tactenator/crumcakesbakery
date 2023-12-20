@@ -1857,6 +1857,10 @@ video {
     top: 25%;
   }
 
+  .sm\:top-1\/2 {
+    top: 50%;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
