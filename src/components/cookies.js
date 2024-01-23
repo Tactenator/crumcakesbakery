@@ -3,11 +3,15 @@ class Cookies extends HTMLElement{
         super()
     }
 
+    close(e) {
+        console.log(e.target)
+    }
+
     connectedCallback() {
         this.innerHTML = `
     <div id="cookies-modal" class="modal absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-auto  bg-white rounded-xl">
         <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-            <div class="absolute top-1/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white text-4xl"></div>
+        <div id="close" onclick="close()" class="absolute top-5 right-10 text-white text-4xl hover:text-black hover:cursor-pointer">X</div>
           </div>
           <div class="container px-6 md:px-12">
             <div

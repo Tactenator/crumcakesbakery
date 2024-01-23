@@ -167,7 +167,7 @@
     <!--   🛑 Product card 2- Ends Here  -->
 
     <!--   ✅ Product card 3 - Starts Here 👇 -->
-    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div id="cheesecake" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
             <img src="https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
@@ -323,11 +323,51 @@
     <!--   🛑 Product card 6 - Ends Here  -->
 
     <section>
-        <cookie-modal id="cookies-modal" class="hidden"></cookie-modal>
-        <!-- <cake-modal id="cakes-modal" class="hidden overflow-scroll"></cake-modal> -->
-        <div id="cakes-modal" class="modal hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-auto  bg-white rounded-xl">
+        <div id="cookies-modal" class="modal hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-auto  bg-white rounded-xl">
             <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="absolute top-1/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white text-4xl"></div>
+            <div id="close" onclick="close()" class="absolute top-5 right-10 text-white text-4xl hover:text-black hover:cursor-pointer">X</div>
+              </div>
+              <div class="container px-6 md:px-12">
+                <div
+                  class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+                  <div class="flex flex-col sm:flex-row gap-20">
+                    <div class="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                      <div class="text-3xl font-bold">Fresh Baked Cookies</div>
+                      <div class="text-lg">Whether you're treating yourself or surprising a loved one, our warm and gooey cookies are the perfect way to sweeten any moment. Visit us today to savor the goodness of freshly baked cookies that are made with love and guaranteed to delight your taste buds.</div>
+                    </div>
+                    <div class="w-full lg:w-7/12">
+                        <div class="text-4xl font-bold pb-3">Our Flavors</div>
+                        <div class="text-xl italic text-primary font-bold">$20 per dozen</div>
+                        <div class="flex flex-col lg:flex-row gap-20">
+                            <div>
+                                <p>Chocolate Chip</p>
+                                <p>M&M</p>
+                                <p>Raspberry Sugar</p>
+                                <p>Chocolate Pecan</p>
+                                <p>Triple Chocolate</p>
+                                <p>Cookies & Cream</p>
+                            </div>
+                            <div>
+                                <p>Monster</p>
+                                <p>Peanut Butter Cup</p>
+                                <p>Chai Snicker Doodle</p>
+                                <p>Loaded Oatmeal</p>
+                                <p>Confetti Sugar</p>
+                                <p>Soft Sugar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <cake-modal id="cakes-modal" class="hidden overflow-scroll"></cake-modal> -->
+        
+    </section>
+
+    <section>
+        <div id="cakes-modal" class="modal hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-1/2 bg-white rounded-xl">
+            <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div id="close" class="absolute top-5 right-10 text-white text-4xl hover:text-black hover:cursor-pointer">X</div>
               </div>
               <div class="container px-6 md:px-12">
                 <div
@@ -336,6 +376,7 @@
                     <div class="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                       <div class="text-3xl font-bold">Home Made Cakes</div>
                       <div class="text-lg">Our cakes are crafted to add a touch of sweetness to life's memorable moments. Visit us today and indulge in the divine pleasure of freshly baked cakes that are not just desserts but edible works of art, making every celebration extraordinary.</div>
+                      <a href="#"><button class="bg-primary text-white font-bold mt-5 rounded-xl w-1/2 text-xl px-5 py-4 transition-all duration-200 hover:bg-link hover:text-text">Order Now</button></a>
                     </div>
                     <div class="w-full lg:w-7/12">
                         <div class="text-4xl font-bold pb-3">Our Flavors</div>
@@ -356,18 +397,24 @@
                             </div>
                             <div>
                                 <div class="text-2xl font-bold underline">Signature Flavors</div>
-                                <p>Monster</p>
+                                <p>Fresh Strawberry</p>
+                                <p>Chocolate Raspberry</p>
                                 <p>Peanut Butter Cup</p>
-                                <p>Chai Snicker Doodle</p>
-                                <p>Loaded Oatmeal</p>
-                                <p>Confetti Sugar</p>
-                                <p>Soft Sugar</p>
+                                <p>Chocolate Salted Caramel</p>
+                                <p>Caribbean Passion</p>
+                                <p>Raspberry Magic</p>
+                                <p>Tiramisu</p>
+                                <p>Lemon Raspberry</p>
+                                <p>German Chocolate</p>
+                                <p>Cookie Dough</p>
+                                <p>S'mores</p>
+                                <p>Turtle Pecan</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="px-6 md:px-12">
-                        <div class="text-3xl">Pricing</div>
+                        <div class="text-3xl underline">Pricing</div>
                         <div class="text-xl italic">Size: Double Layer - Basic Decoration</div>
                         <div class="flex flex-row justify-between pt-3 text-lg">
                             <div class="flex flex-col gap-3">
@@ -421,6 +468,84 @@
                                     <div>$20/dozen</div>
                                 </div>
                             </div>
+                            
+                        </div>
+                    </div>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="cheesecake-modal" class="modal hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-1/2 bg-white rounded-xl">
+            <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div id="close" class="absolute top-5 right-10 text-white text-4xl hover:text-black hover:cursor-pointer">X</div>
+              </div>
+              <div class="container px-6 md:px-12">
+                <div
+                  class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+                  <div class="flex flex-col sm:flex-row gap-20">
+                    <div class="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                      <div class="text-3xl font-bold">Sumptuous Cheesecakes</div>
+                      <div class="text-lg">From classic New York-style to inventive twists like caramel swirl or raspberry-infused, our cheesecake selection caters to every taste bud.</div>
+                      <a href="#"><button 
+                        class="bg-primary text-white font-bold mt-5 rounded-xl w-1/2 text-xl px-5 py-4 transition-all duration-200 hover:bg-link hover:text-text">Order Now</button></a>
+                    </div>
+                    <div class="w-full lg:w-7/12">
+                        <div class="text-4xl font-bold pb-3">Our Flavors</div>
+                        <div class="flex flex-col lg:flex-row gap-20">
+                            <div>
+                                <p>Classic</p>
+                                <p>Key Lime Pie</p>
+                                <p>Fresh Strawberry</p>
+                                <p>Oreo</p>
+                                <p>Piña colada</p>
+                                <p>Turtle</p>
+                                <p>Cookie Dough</p>
+                                <p>Lemon</p>
+                            </div>
+                            <div>
+                                <p>Banana Pudding</p>
+                                <p>Triple Chocolate</p>
+                                <p>Blueberry Swirl/p>
+                                <p>Chocolate Hazelnut</p>
+                                <p>Raspberry Tiramisu</p>
+                                <p>Any Candy Bar Flavor</p>
+                                <p>S'mores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 md:px-12">
+                        <div class="text-3xl underline">Pricing</div>
+                        <div class="flex flex-row gap-20 pt-3 text-lg">
+                            <div class="flex flex-col gap-3">
+                                <div class="flex flex-row">
+                                    <div class="underline">Individual 4" (2 servings)</div>
+                                    <div>......</div>
+                                    <div>$12</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">6" Round (6 servings)</div>
+                                    <div>......</div>
+                                    <div>$25</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">8" Round (12 servings)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex flex-row">
+                                    <div class="underline">Cheesecake Bites</div>
+                                    <div>......</div>
+                                    <div>
+                                        <p>6 Pack - $9</p>
+                                        <p>Dozen - $18</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
                             
                         </div>
                     </div>
@@ -498,8 +623,20 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 <script>
+    const closeModal = document.getElementById('close')
+    closeModal.addEventListener('click', () => {
+        console.log('close clicked')
+    })
+
     const cookies = document.getElementById('cookies')
     const cakes = document.getElementById('cakes')
+    const cheesecakes = document.getElementById('cheesecake')
+
+    cheesecakes.addEventListener('click', () => {
+        const cheesecakeModal = document.getElementById('cheesecake-modal')
+
+        cheesecakeModal.classList.remove('hidden')
+    })
 
     cakes.addEventListener('click', () => {
         const cakeModal = document.getElementById('cakes-modal')
