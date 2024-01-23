@@ -1,11 +1,11 @@
-class Cookies extends HTMLElement{
+class Cakes extends HTMLElement{
     constructor() {
         super()
     }
 
     connectedCallback() {
         this.innerHTML = `
-        <div id="cookies-modal" class="modal absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-auto  bg-white rounded-xl">
+        <div class="modal absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-auto  bg-white rounded-xl">
         <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             <div class="absolute top-1/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white text-4xl"></div>
           </div>
@@ -19,9 +19,9 @@ class Cookies extends HTMLElement{
                 </div>
                 <div class="w-full lg:w-7/12">
                     <div class="text-4xl font-bold pb-3">Our Flavors</div>
-                    <div class="text-xl italic text-primary font-bold">$20 per dozen</div>
                     <div class="flex flex-col lg:flex-row gap-20">
                         <div>
+                            <div class="text-2xl font-bold underline">Classic Flavors</div>
                             <p>Chocolate Chip</p>
                             <p>M&M</p>
                             <p>Raspberry Sugar</p>
@@ -30,6 +30,7 @@ class Cookies extends HTMLElement{
                             <p>Cookies & Cream</p>
                         </div>
                         <div>
+                            <div class="text-2xl font-bold underline">Signature Flavors</div>
                             <p>Monster</p>
                             <p>Peanut Butter Cup</p>
                             <p>Chai Snicker Doodle</p>
@@ -46,5 +47,5 @@ class Cookies extends HTMLElement{
     }
 }
 
-customElements.define('cookie-modal', Cookies)
+customElements.define('cake-modal', Cakes)
 
