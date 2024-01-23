@@ -15,7 +15,7 @@ module.exports = {
         'primary': '#f782b9',
         'secondary': '#F3F782',
         'accent': '#82F7C1', 
-        'link': '#8682F7',
+        'link': '#b2e4e8',
         'footer': "#282c2f"
        },
        backgroundImage: {
