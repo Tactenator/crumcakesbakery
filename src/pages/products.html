@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../components/cookies.js" type="text/javascript" defer></script>
+    <script src="../components/cakes.js" type="text/javascript" defer></script>
     <title>Crum Cakes Bakery</title>
 </head>
 <body class="font-fredoka" style="background: url('../../public/img/sprinkle-bg.png');">
@@ -114,7 +115,7 @@
     class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center py-20 justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 
     <!--   ✅ Product card 1 - Starts Here 👇 -->
-    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div id="cakes" class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
             <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
@@ -323,6 +324,108 @@
 
     <section>
         <cookie-modal id="cookies-modal" class="hidden"></cookie-modal>
+        <!-- <cake-modal id="cakes-modal" class="hidden overflow-scroll"></cake-modal> -->
+        <div id="cakes-modal" class="modal hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-3/4 h-auto  bg-white rounded-xl">
+            <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div class="absolute top-1/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white text-4xl"></div>
+              </div>
+              <div class="container px-6 md:px-12">
+                <div
+                  class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+                  <div class="flex flex-col sm:flex-row gap-20">
+                    <div class="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                      <div class="text-3xl font-bold">Home Made Cakes</div>
+                      <div class="text-lg">Our cakes are crafted to add a touch of sweetness to life's memorable moments. Visit us today and indulge in the divine pleasure of freshly baked cakes that are not just desserts but edible works of art, making every celebration extraordinary.</div>
+                    </div>
+                    <div class="w-full lg:w-7/12">
+                        <div class="text-4xl font-bold pb-3">Our Flavors</div>
+                        <div class="flex flex-col lg:flex-row gap-20">
+                            <div>
+                                <div class="text-2xl font-bold underline">Classic Flavors</div>
+                                <p>Vanilla Bean</p>
+                                <p>Wedding Cake</p>
+                                <p>Marble</p>
+                                <p>Chocolate Indulgence</p>
+                                <p>Lemon</p>
+                                <p>Confetti</p>
+                                <p>Red Velvet</p>
+                                <p>Coconut Cream</p>
+                                <p>Strawberry</p>
+                                <p>White - Pink</p>
+                                <p>Champagne</p>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold underline">Signature Flavors</div>
+                                <p>Monster</p>
+                                <p>Peanut Butter Cup</p>
+                                <p>Chai Snicker Doodle</p>
+                                <p>Loaded Oatmeal</p>
+                                <p>Confetti Sugar</p>
+                                <p>Soft Sugar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 md:px-12">
+                        <div class="text-3xl">Pricing</div>
+                        <div class="text-xl italic">Size: Double Layer - Basic Decoration</div>
+                        <div class="flex flex-row justify-between pt-3 text-lg">
+                            <div class="flex flex-col gap-3">
+                                <div class="flex flex-row">
+                                    <div class="underline">4" Smash Cake (serves 2-4)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">6" Round (serves 8-10)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">8" Round (serves 10-16)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex flex-row">
+                                    <div class="underline">10" Round (serves 20-30)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">12" Round (serves 36+)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">1/4 Sheet Cake (serves 20)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex flex-row">
+                                    <div class="underline" >1/2 Sheet Cake (serves 40)</div>
+                                    <div>......</div>
+                                    <div>$20</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">Cupcakes</div>
+                                    <div>......</div>
+                                    <div>$32/dozen</div>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="underline">Mini Cupcakes</div>
+                                    <div>......</div>
+                                    <div>$20/dozen</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+              </div>
+        </div>
     </section>
 
 </section>
@@ -396,9 +499,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 <script>
     const cookies = document.getElementById('cookies')
+    const cakes = document.getElementById('cakes')
+
+    cakes.addEventListener('click', () => {
+        const cakeModal = document.getElementById('cakes-modal')
+
+        cakeModal.classList.remove('hidden')
+    })
 
     cookies.addEventListener('click', () => {
-        console.log('cookies clicked!')
+
         const cookieModal = document.getElementById('cookies-modal')
 
         cookieModal.classList.remove('hidden')

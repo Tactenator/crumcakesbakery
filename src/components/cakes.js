@@ -41,6 +41,64 @@ class Cakes extends HTMLElement{
                     </div>
                 </div>
             </div>
+            <div class="">
+                    <div>Pricing</div>
+                    <div>Size: Double Layer - Basic Decoration</div>
+                    <div class="flex-row">
+                        <div>
+                            <div class="flex-row">
+                                <div>4" Smash Cake (serves 2-4)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                            <div class="flex-row">
+                                <div>6" Round (serves 8-10)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                            <div class="flex-row">
+                                <div>8" Round (serves 10-16)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-row">
+                                <div>10" Round (serves 20-30)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                            <div class="flex-row">
+                                <div>12" Round (serves 36+)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                            <div class="flex-row">
+                                <div>1/4 Sheet Cake (serves 20)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex-row">
+                                <div>1/2 Sheet Cake (serves 40)</div>
+                                <div>......</div>
+                                <div>$20</div>
+                            </div>
+                            <div class="flex-row">
+                                <div>Cupcakes</div>
+                                <div>......</div>
+                                <div>$32/dozen</div>
+                            </div>
+                            <div class="flex-row">
+                                <div>Mini Cupcakes</div>
+                                <div>......</div>
+                                <div>$20/dozen</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
           </div>
     </div>
         `
