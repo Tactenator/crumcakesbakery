@@ -1835,6 +1835,10 @@ html, body {
     top: 25%;
   }
 
+  .sm\:left-1\/2 {
+    left: 50%;
+  }
+
   .sm\:mt-10 {
     margin-top: 2.5rem;
   }
