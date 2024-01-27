@@ -63,7 +63,7 @@
 
     <!-- Navbar -->
     <nav>
-        <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-xl font-bold">
+        <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-xl font-bold bg-white">
             <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="./index.html">Home</a>
             <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
@@ -85,19 +85,11 @@
                                     <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                                 </div>
                             </a>
-                            <div class="bg-footer w-full mx-auto" style="height: 1px;"></div>
-                            <a href="#" class="text-black text-base pb-3">
-                                <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
-                                    <h4 class="font-bold text-lg py-1 px-2 relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Misc. Order Form</h4>
-                                    <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                                </div>
-                            </a>
-                            
                         </ul>
                     </div>
                 </div>
             <div id="logo-holder">
-                <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20" src="./public/img/logo.jpg" alt="Crum Cakes Bakery">
+                <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20 rounded-full" src="./public/img/logo.jpg" alt="Crum Cakes Bakery">
             </div>
             <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
@@ -118,8 +110,8 @@
             <div class="absolute top-20 sm:top-1/4 left-1/2 transform -translate-x-1/2 
             translate-y-0 text-center text-white flex flex-col gap-10">
                 <h1 class="text-3xl sm:text-4xl font-bold">Every Batch From Scratch</h1>
-                <p class="text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero natus eveniet ducimus</p>
-                <div class="w-full">
+                <p class="text-2xl">Our Baked Goods are Making Omaha Sweeter by the Day</p>
+                <div class="flex w-2/5 mx-auto">
                     <a href="./src/pages/products.html" class="bg-primary font-bold rounded-xl w-full text-xl px-5 py-4 transition-all duration-200 hover:bg-link hover:text-text">
                         Our Products</a>
                 </div>
@@ -135,12 +127,17 @@
                 <div class="pb-3">
                     <img width="200" height="200" src="./public/img/divider.png" alt="Cake">
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 flex flex-col gap-4">
                     <h2 class="text-3xl text-center">Omaha Nebraska</h2>
                     <h1 class="text-4xl text-center">Crum Cakes Bakery</h1>
                     <span class="text-xl text-center">Made with C.A.R.E</span>
                     <p class="w-full lg:w-1/2 text-center text-lg mt-10 lg:text-left"> At our bakery, we pride ourselves on creating delicious baked goods that are a symphony of flavors and textures. From heavenly cakes and decadent brownies to artisanal cupcakes and hand-dipped chocolate strawberries, our treats are crafted with passion and precision.</p>
                     <p class="w-full lg:w-1/2 text-center text-lg mt-10 lg:text-left">What started as a small, passion project to raise money for school soon turned into a dream come true: our own bakery. We are proud to serve the finest baked goods in Omaha and we continue to strive to provide the best cakes, cookies and all things delicious to our customers. </p>
+                    <button class="flex flex-row mx-auto w-1/2">
+                        <a href="./src/pages/products.html" 
+                        class="bg-primary text-white font-bold rounded-xl w-full text-xl px-5 py-4 transition-all duration-200 hover:bg-footer hover:text-white">
+                            About Us</a>
+                    </button>
                 </div>
                 
             </div>
@@ -286,7 +283,7 @@
                 <p class="w-full lg:w-1/2 text-center text-lg mt-10 lg:text-left">  Imagine celebrating birthdays, weddings, graduations, or any occasion with a cake that's not just delicious but uniquely designed to reflect your style and sentiments. We thrive on personalization, turning your ideas into edible masterpieces.</p>
                 <p class="w-full lg:w-1/2 text-center text-lg mt-10 lg:text-left">Every cake we create is a blend of our passion for baking and your individual preferences, ensuring that your celebrations are sweet, memorable, and uniquely yours.</p>
                 <a href="#">
-                    <button class="bg-primary text-white font-bold mt-5 rounded-xl text-xl px-10 py-4 transition-all duration-200 hover:bg-background hover:text-text">
+                    <button class="bg-primary text-white font-bold mt-5 rounded-xl text-xl px-10 py-4 transition-all duration-200 hover:bg-footer hover:text-white">
                         Order Now
                     </button>
                 </a>
