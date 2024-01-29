@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Crum Cakes Bakery</title>
 </head>
-<body class="font-fredoka">
+<body class="font-fredoka" style="background: url('../../public/img/sprinkle-bg.png')">
     <!-- Above the Navbar-->
     <section>
       <!-- Small bar on top to show address and telephone number-->
@@ -27,7 +27,7 @@
 
       <div id="mobile-info-container" class="flex flex-row sm:hidden justify-between items-center px-3 sm:px-40 py-5 bg-footer text-white h-20">
           <div class="">Crum Cakes Bakery</div>
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -35,15 +35,15 @@
           </button>
       </nav>
       <div class="hidden w-[100vw] absolute top-14 left-0 md:w-auto z-50" id="navbar-default">
-        <ul class="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
           <li>
-            <a href="../../index.html" class="block py-2 px-3 text-footer rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+            <a href="../../index.html" class="block py-2 px-3 text-footer rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="./products.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
+            <a href="./products.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Products</a>
           </li>
           <li>
-            <div class="block py-2 px-3 text-footer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Order</div>
+            <div class="block py-2 px-3 text-footer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Order</div>
             <div class="w-full bg-slate-100 flex flex-col py-2 px-8 gap-2">
                 <a class="text-footer" href="https://form.jotform.com/71278774684169">Cake Order Form</a>
                 <a class="text-footer" href="https://form.jotform.com/233285463471156">Holiday Order Form</a>
@@ -51,7 +51,7 @@
             </div>
           </li>
           <li>
-            <a href="./contact.html" class="block py-2 px-3 text-white bg-link rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+            <a href="./contact.html" class="block py-2 px-3 text-white bg-link rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact Us</a>
           </li>
         </ul>
         </div>
@@ -61,15 +61,15 @@
 
 
   <!-- Navbar -->
-  <nav>
-      <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-xl font-bold">
+  <nav class="bg-white">
+      <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-2xl font-bold">
           <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
           before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="../../index.html">Home</a>
           <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
               class="text-2xl font-bold  relative before:transition-all before:duration-200 hover:cursor-pointer
               before:absolute before:h-[3px] before:w-0 before:bg-comic-blue before:hover:w-full before:top-full">
               Order
-                  <div aria-labelledby="dropdownHoverButton" id="dropdownHover" class=" border-4 border-primary z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-80 dark:bg-gray-700">
+                  <div aria-labelledby="dropdownHoverButton" id="dropdownHover" class=" border-4 border-primary z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-80 ">
                       <ul class="py-3 px-3">
                           <a href="https://form.jotform.com/71278774684169" class="text-black text-base pb-3">
                               <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
@@ -83,22 +83,14 @@
                                   <h4 class="font-bold text-lg py-1 px-2  relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Holiday Order Form</h4>
                                   <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                               </div>
-                          </a>
-                          <div class="bg-footer w-full mx-auto" style="height: 1px;"></div>
-                          <a href="./src/pages/printing.html" class="text-black text-base pb-3">
-                              <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
-                                  <h4 class="font-bold text-lg py-1 px-2 relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Misc. Order Form</h4>
-                                  <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                              </div>
-                          </a>
-                          
+                          </a> 
                       </ul>
                   </div>
               </div>
-          <div id="logo-holder">
-              <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20" 
-              src="../../public/img/logo.jpg" alt="Crum Cakes Bakery">
-          </div>
+              <div id="logo-holder">
+                <img width="200" height="200" 
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20 rounded-full" src="../../public/img/logo.jpg" alt="Crum Cakes Bakery">
+            </div>
           <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
           before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
           href="./products.html">Products</a>
@@ -108,46 +100,46 @@
       </ul>
   </nav>
     <!-- Container for demo purpose -->
-<div class="container my-24 mx-auto md:px-6">
+<div class="container mx-auto md:px-6">
   <!-- Section: Design Block -->
   <section class="mb-32">
     <div class="relative h-[300px] overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('https://images.unsplash.com/photo-1572978577765-462b91a7f9e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-      <div class="absolute top-1/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white text-4xl">Contact Us</div>
+      <div class="absolute top-1/4 left-1/2 transform -translate-y-[10%] -translate-x-1/2 text-white text-4xl">Contact Us</div>
     </div>
     <div class="container px-6 md:px-12">
       <div
-        class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+        class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
         <div class="flex flex-col sm:flex-row">
           <div class="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
             <form class="w-full">
               <div class="relative mb-6" data-te-input-wrapper-init>
                 <input type="text"
-                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-footer [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleInput90" placeholder="Name" />
                 <label
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-footer"
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
                   for="exampleInput90">Name
                 </label>
               </div>
               <div class="relative mb-6" data-te-input-wrapper-init>
                 <input type="email"
-                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-footer [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleInput91" placeholder="Email address" />
                 <label
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-footer"
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
                   for="exampleInput91">Email address
                 </label>
               </div>
               <div class="relative mb-6" data-te-input-wrapper-init>
                 <textarea
-                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
                 <label for="exampleFormControlTextarea1"
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-footer">Message</label>
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none">Message</label>
               </div>
              
               <button data-te-ripple-init 
-                class="mb-6 inline-block w-full rounded bg-link px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0">
+                class="mb-6 inline-block w-full rounded bg-link px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] lg:mb-0">
                 Send
               </button>
             </form>
@@ -166,10 +158,10 @@
                     </div>
                   </div>
                   <div class="ml-6">
-                    <p class="mb-2 font-bold dark:text-white">
+                    <p class="mb-2 font-bold ">
                       Telephone
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-200">
+                    <p class="text-neutral-500 ">
                       <a href="tel:402-850-5941">402-850-5941</a>
                     </p>
                   </div>
@@ -183,10 +175,10 @@
                     </div>
                   </div>
                   <div class="ml-6 grow">
-                    <p class="mb-2 font-bold dark:text-white">
+                    <p class="mb-2 font-bold ">
                       Email
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-200">
+                    <p class="text-neutral-500 ">
                       <a href="mailto:crumcakesbakery@yahoo.com">crumcakesbakery@yahoo.com</a>
                     </p>
                   </div>
@@ -205,11 +197,11 @@
                     </div>
                   </div>
                   <div class="ml-6 grow">
-                    <p class="mb-2 font-bold dark:text-white">Address</p>
-                    <p class="text-neutral-500 dark:text-neutral-200">
+                    <p class="mb-2 font-bold ">Address</p>
+                    <p class="text-neutral-500 ">
                       763 N 114th St
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-200">
+                    <p class="text-neutral-500 ">
                       Omaha, NE, United States, Nebraska
                     </p>
                   </div>
