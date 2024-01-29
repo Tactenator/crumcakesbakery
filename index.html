@@ -15,10 +15,12 @@
     <!-- Above the Navbar-->
     <section>
         <!-- Small bar on top to show address and telephone number-->
-        <div id="top-info-container" class="hidden sm:flex flex-row justify-between px-40 py-5 bg-footer text-white h-20">
+        <div id="top-info-container" class="hidden sm:flex flex-row justify-between items-center px-40 py-5 bg-footer text-white h-20">
             <div class="sm:flex flex-row gap-10">
-                <div class="">763 N 114th St, Omaha, NE 68154</div>
-                <div>(402) 850-5941</div>
+                <a href="https://www.google.com/maps/place/Crum+Cakes+Bakery/@41.2662671,-96.0900468,831m/data=!3m1!1e3!4m14!1m7!3m6!1s0x8793f31b26c76cd9:0xdc4e73c7345c53c!2sCrum+Cakes+Bakery!8m2!3d41.2663849!4d-96.0898274!16s%2Fg%2F11kr9npj_g!3m5!1s0x8793f31b26c76cd9:0xdc4e73c7345c53c!8m2!3d41.2663849!4d-96.0898274!16s%2Fg%2F11kr9npj_g?hl=en&entry=ttu" class="relative before:transition-all before:duration-200 hover:cursor-pointer
+                before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full">763 N 114th St, Omaha, NE 68154</a>
+                <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+                before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="tel:4028505941">(402) 850-5941</a>
             </div>
             <!-- Showing if the store is opened or not. Gonna require Javascript-->
             <div class="hidden sm:block">
@@ -63,7 +65,7 @@
 
     <!-- Navbar -->
     <nav>
-        <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-xl font-bold bg-white">
+        <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-2xl font-bold bg-white">
             <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="./index.html">Home</a>
             <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
@@ -91,10 +93,10 @@
             <div id="logo-holder">
                 <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20 rounded-full" src="./public/img/logo.jpg" alt="Crum Cakes Bakery">
             </div>
-            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer text-2xl
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
             href="./src/pages/products.html">Products</a>
-            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer text-2xl
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
             href="./src/pages/contact.html">Contact</a>
         </ul>
@@ -252,7 +254,7 @@
 
     <!-- Small about blurb-->
     <section class="mt-10 bg-link">
-        <div class="flex flex-col sm:flex-row items-center justify-center text-center">
+        <div class="flex flex-col lg:flex-row items-center justify-center text-center">
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide" >
                 <!-- Carousel wrapper -->
                 <div class="relative h-[30rem] overflow-hidden rounded-lg md:h-[40rem] lg:h-[40rem]">
@@ -286,7 +288,7 @@
                 <h1 class="text-4xl text-center">Cakes for Every Occasion</h1>
                 <p class="w-full lg:w-1/2 text-center text-lg mt-10 lg:text-left">  Imagine celebrating birthdays, weddings, graduations, or any occasion with a cake that's not just delicious but uniquely designed to reflect your style and sentiments. We thrive on personalization, turning your ideas into edible masterpieces.</p>
                 <p class="w-full lg:w-1/2 text-center text-lg mt-10 lg:text-left">Every cake we create is a blend of our passion for baking and your individual preferences, ensuring that your celebrations are sweet, memorable, and uniquely yours.</p>
-                <a href="#">
+                <a href="https://form.jotform.com/71278774684169">
                     <button class="bg-primary text-white font-bold mt-5 rounded-xl text-xl px-10 py-4 transition-all duration-200 hover:bg-footer hover:text-white">
                         Order Now
                     </button>
@@ -332,18 +334,23 @@
                 </h5>
                 <div class="mt-6 lg:mb-0 mb-6">
                   <a href="https://www.facebook.com/crumcakesbakery/">
-                    <button class="bg-white text-primary shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-primary hover:text-white" type="button">
+                    <button class="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-primary hover:text-white" type="button">
                         <i class="fab fa-facebook-square"></i>
                       </button>
                   </a>
                   <a href="tel:402-850-5941" >
-                    <button class="bg-white text-primary shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-primary hover:text-white"  type="button">
+                    <button class="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-primary hover:text-white"  type="button">
                         <i class="fa-solid fa-phone"></i>
                     </button>
                   </a>
                   <a href="mailto:crumcakesbakery@yahoo.com">
-                    <button class="bg-white text-primary shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-primary hover:text-white" type="button">
+                    <button class="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-primary hover:text-white" type="button">
                         <i class="fa-solid fa-envelope" ></i>
+                    </button>
+                  </a>
+                  <a href="https://www.instagram.com/explore/locations/686484374720608/crum-cakes-bakery/">
+                    <button class="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-primary hover:text-white" type="button">
+                        <i class="fa-brands fa-instagram" ></i>
                     </button>
                   </a>
                 </div>
@@ -354,15 +361,25 @@
                     <span class="block uppercase text-blueGray-500 text-2xl font-semibold mb-2 underline">Navigation</span>
                     <ul class="list-unstyled">
                       <li>
-                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-primary" 
                         href="./index.html">Home</a>
                       </li>
                       <li>
-                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link"
+                        <div class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200">Order Forms</div>
+                        
+                        <li class="ml-3 text-lg">
+                            <a class="transition-all duration-200 hover:text-primary" href="https://form.jotform.com/71278774684169">Cake Order Form</a>
+                        </li>
+                        <li class="ml-3 text-lg">
+                            <a class="transition-all duration-200 hover:text-primary" href="https://form.jotform.com/71278774684169">Holiday Order Form</a>
+                        </li>
+                      </li>
+                      <li class="mt-2">
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-primary"
                          href="./src/pages/products.html">Products</a>
                       </li>
                       <li>
-                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-primary" 
                         href="./src/pages/contact.html">Contact</a>
                       </li>
                     </ul>
@@ -370,16 +387,16 @@
                   
                 </div>
               </div>
-              <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.314262225837!2d-96.0898274!3d41.2663849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f31b26c76cd9%3A0xdc4e73c7345c53c!2sCrum%20Cakes%20Bakery!5e1!3m2!1sen!2sus!4v1702427388612!5m2!1sen!2sus&z=15" class="w-80 h-40" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+              <a href="https://www.google.com/maps/place/Crum+Cakes+Bakery/@41.2662671,-96.0900468,831m/data=!3m1!1e3!4m14!1m7!3m6!1s0x8793f31b26c76cd9:0xdc4e73c7345c53c!2sCrum+Cakes+Bakery!8m2!3d41.2663849!4d-96.0898274!16s%2Fg%2F11kr9npj_g!3m5!1s0x8793f31b26c76cd9:0xdc4e73c7345c53c!8m2!3d41.2663849!4d-96.0898274!16s%2Fg%2F11kr9npj_g?hl=en&entry=ttu">
+                <img src="./public/img/crumcakes-map.png" alt="Google maps of Crum Cakes Bakery">
+              </a>
             </div>
             <hr class="my-6 border-blueGray-300">
             <div class="flex flex-wrap items-center md:justify-between justify-center">
               <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                 <div class="text-sm text-blueGray-500 font-semibold py-1">
-                  Copyright © Powered by <span id="get-current-year">2023</span>
-                  <a href="https://www.paleblackdotllc.com" class="text-blueGray-500 hover:text-link" 
+                  Copyright © <span id="get-current-year">2024</span> Powered by
+                  <a href="https://www.paleblackdotllc.com" class="text-blueGray-500 transition-all duration-200 hover:text-primary" 
                   target="_blank"> Pale Black Dot 
                 </div>
               </div>
@@ -389,7 +406,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script>
-        const cookies = document.getElementById('cookies')
+        
     </script>
 </body>
 </html>
