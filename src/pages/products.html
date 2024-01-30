@@ -21,7 +21,7 @@
     <!-- Above the Navbar-->
     <section>
         <!-- Small bar on top to show address and telephone number-->
-        <div id="top-info-container" class="hidden sm:flex flex-row justify-between items-center px-40 py-5 bg-footer text-white h-20">
+        <div id="top-info-container" class="hidden md:flex flex-row justify-between items-center md:px-10 lg:px-40 py-5 bg-footer text-white h-20">
             <div class="sm:flex flex-row gap-10">
                 <a href="https://www.google.com/maps/place/Crum+Cakes+Bakery/@41.2662671,-96.0900468,831m/data=!3m1!1e3!4m14!1m7!3m6!1s0x8793f31b26c76cd9:0xdc4e73c7345c53c!2sCrum+Cakes+Bakery!8m2!3d41.2663849!4d-96.0898274!16s%2Fg%2F11kr9npj_g!3m5!1s0x8793f31b26c76cd9:0xdc4e73c7345c53c!8m2!3d41.2663849!4d-96.0898274!16s%2Fg%2F11kr9npj_g?hl=en&entry=ttu" class="relative before:transition-all before:duration-200 hover:cursor-pointer
                 before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full">763 N 114th St, Omaha, NE 68154</a>
@@ -34,35 +34,35 @@
             </div>
         </div> 
 
-        <div id="mobile-info-container" class="flex flex-row sm:hidden justify-between items-center px-3 sm:px-40 py-5 bg-footer text-white h-20">
-            <div class="">Crum Cakes Bakery</div>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+        <div id="mobile-info-container" class="flex flex-row md:hidden justify-between items-center px-3 sm:px-40 py-5 bg-footer text-white h-20">
+            <div class="font-bold text-xl">Crum Cakes Bakery</div>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
             </button>
-        </nav>
+        
         <div class="hidden w-[100vw] absolute top-14 left-0 md:w-auto z-50" id="navbar-default">
-            <ul class="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
-                <li>
-                  <a href="../../index.html" class="block py-2 px-3 text-footer rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
-                </li>
-                <li>
-                  <a href="./products.html" class="block py-2 px-3 bg-link text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Products</a>
-                </li>
-                <li>
-                  <div class="block py-2 px-3 text-footer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Order</div>
-                  <div class="w-full bg-slate-100 flex flex-col py-2 px-8 gap-2">
-                      <a class="text-footer" href="https://form.jotform.com/71278774684169">Cake Order Form</a>
-                      <a class="text-footer" href="https://form.jotform.com/233285463471156">Holiday Order Form</a>
-                      <a class="text-footer" href="#">Misc. Order Form</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="./contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  ">Contact Us</a>
-                </li>
-              </ul>
+            <ul class="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+              <li>
+                <a href="./index.html" class="block py-2 px-3 text-white bg-link rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="./src/pages/products.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Products</a>
+              </li>
+              <li>
+                <div class="block py-2 px-3 text-footer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Order</div>
+                <div class="w-full bg-slate-100 flex flex-col py-2 px-8 gap-2">
+                    <a class="text-footer" href="https://form.jotform.com/71278774684169">Cake Order Form</a>
+                    <a class="text-footer" href="https://form.jotform.com/233285463471156">Holiday Order Form</a>
+                    <a class="text-footer" href="#">Misc. Order Form</a>
+                </div>
+              </li>
+              <li>
+                <a href="./src/pages/contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -70,16 +70,15 @@
 
 
     <!-- Navbar -->
-    <nav class="bg-white">
-        <ul class="hidden sm:flex flex-row justify-center mx-auto gap-40 pl-10 py-10 text-2xl font-bold">
+    <nav>
+        <ul class="hidden md:flex flex-row justify-center mx-auto md:gap-10  pl-10 py-10 text-2xl font-bold bg-white">
             <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
-            before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
-            href="../../index.html">Home</a>
+            before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" href="../../index.html">Home</a>
             <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
                 class="text-2xl font-bold  relative before:transition-all before:duration-200 hover:cursor-pointer
                 before:absolute before:h-[3px] before:w-0 before:bg-comic-blue before:hover:w-full before:top-full">
                 Order
-                    <div aria-labelledby="dropdownHoverButton" id="dropdownHover" class=" border-4 border-primary z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-80 ">
+                    <div aria-labelledby="dropdownHoverButton" id="dropdownHover" class=" border-4 border-primary z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-80 dark:bg-gray-700">
                         <ul class="py-3 px-3">
                             <a href="https://form.jotform.com/71278774684169" class="text-black text-base pb-3">
                                 <div class="transition-all duration-200 rounded-xl py-2 px-2 group">
@@ -93,18 +92,17 @@
                                     <h4 class="font-bold text-lg py-1 px-2  relative before:transition-all before:duration-200 hover:cursor-pointer before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-3/4 before:top-full">Holiday Order Form</h4>
                                     <p class="text-sm py-1 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                                 </div>
-                            </a> 
+                            </a>
                         </ul>
                     </div>
                 </div>
-                <div id="logo-holder">
-                    <img width="200" height="200" 
-                    class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20 rounded-full" src="../../public/img/logo.webp" alt="Crum Cakes Bakery">
-                </div>
-            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            <div id="logo-holder" class="md:pl-20 md:pr-24 ">
+                <img width="200" height="200" class="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 z-20 rounded-full" src="../../public/img/logo.webp" alt="Crum Cakes Bakery">
+            </div>
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer text-2xl
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
             href="./products.html">Products</a>
-            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer
+            <a class="relative before:transition-all before:duration-200 hover:cursor-pointer text-2xl
             before:absolute before:h-[4px] before:w-0 before:bg-primary before:hover:w-full before:top-full" 
             href="./contact.html">Contact</a>
         </ul>
