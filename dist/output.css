@@ -704,8 +704,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.bottom-10 {
+  bottom: 2.5rem;
 }
 
 .left-0 {
@@ -716,8 +716,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   left: 50%;
 }
 
-.left-60 {
-  left: 15rem;
+.left-\[10\%\] {
+  left: 10%;
 }
 
 .right-10 {
@@ -752,30 +752,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   top: 40%;
 }
 
-.left-20 {
-  left: 5rem;
-}
-
-.left-40 {
-  left: 10rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.left-\[25\%\] {
-  left: 25%;
-}
-
-.left-\[35\%\] {
-  left: 35%;
-}
-
-.left-\[10\%\] {
-  left: 10%;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -802,11 +778,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .-mt-\[100px\] {
@@ -1164,10 +1135,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   gap: 1rem;
 }
 
-.gap-40 {
-  gap: 10rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1332,11 +1299,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-right: 1rem;
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1409,6 +1371,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 0.75rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1439,18 +1405,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pl-20 {
-  padding-left: 5rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 
 .text-left {
@@ -2005,10 +1959,6 @@ html, body {
     display: flex;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:h-5 {
     height: 1.25rem;
   }
@@ -2120,17 +2070,8 @@ html, body {
     justify-content: space-between;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .md\:gap-x-28 {
-    -moz-column-gap: 7rem;
-         column-gap: 7rem;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -2156,6 +2097,11 @@ html, body {
     padding: 0px;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2176,25 +2122,8 @@ html, body {
     padding-bottom: 4rem;
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .md\:pl-28 {
-    padding-left: 7rem;
-  }
-
-  .md\:pr-28 {
-    padding-right: 7rem;
-  }
-
   .md\:pl-20 {
     padding-left: 5rem;
-  }
-
-  .md\:pr-20 {
-    padding-right: 5rem;
   }
 
   .md\:pr-24 {
@@ -2281,26 +2210,14 @@ html, body {
     flex-direction: row;
   }
 
-  .lg\:gap-40 {
-    gap: 10rem;
-  }
-
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 
-  .lg\:pl-0 {
-    padding-left: 0px;
-  }
-
-  .lg\:pr-0 {
-    padding-right: 0px;
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:text-left {
@@ -2315,10 +2232,6 @@ html, body {
 
   .xl\:max-w-full {
     max-width: 100%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
   }
 
   .xl\:px-12 {
