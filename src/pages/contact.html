@@ -294,6 +294,39 @@
 </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script>
+      const contactButton = document.getElementById('submit-button')
+      const inputDivs = document.querySelectorAll('input')
+      const textArea = document.querySelector('textarea')
 
+      function handleSubmit (e) {
+          e.preventDefault()
+
+          let newForm = document.querySelector('form')
+
+          let formData = new FormData(newForm);
+
+          fetch("./public/contact-form.html", {
+              method: "POST",
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: new URLSearchParams(formData).toString(),
+          })
+          .then(() => console.log('success'))
+          .catch((error) => alert(error));
+      }
+
+      contactButton.addEventListener('click', (e) => {
+        e.preventDefault()
+        handleSubmit(e)
+        contactButton.disabled = true; 
+        inputDivs.forEach(div => {
+          div.placeholder = ""
+          div.disabled = true; 
+        })
+        textArea.disabled = true;
+        contactButton.innerText = 'Message sent! Thank you!'
+
+      })
+    </script>
 </body>
 </html>
