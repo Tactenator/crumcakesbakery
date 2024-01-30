@@ -111,9 +111,9 @@
         class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
         <div class="flex flex-col sm:flex-row">
           <div class="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-            <form class="w-full">
+            <form name="Contact" class="w-full" method="POST" data-netlify="true">
               <div class="relative mb-6" data-te-input-wrapper-init>
-                <input type="text"
+                <input type="text" name="name"
                   class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleInput90" placeholder="Name" />
                 <label
@@ -122,7 +122,7 @@
                 </label>
               </div>
               <div class="relative mb-6" data-te-input-wrapper-init>
-                <input type="email"
+                <input type="email" name="email"
                   class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleInput91" placeholder="Email address" />
                 <label
@@ -131,17 +131,26 @@
                 </label>
               </div>
               <div class="relative mb-6" data-te-input-wrapper-init>
-                <textarea
+                <input type="tel" name="phone"
+                  class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-footer data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="exampleInput91" placeholder="Phone Number" />
+                <label
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                  for="exampleInput91">Phone Number
+                </label>
+              </div>
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <textarea name="message"
                   class="peer block min-h-[auto] w-full rounded-lg border-[1px] bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
                 <label for="exampleFormControlTextarea1"
                   class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-footer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none">Message</label>
               </div>
-             
-              <button data-te-ripple-init 
-                class="mb-6 inline-block w-full rounded bg-link px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] lg:mb-0">
-                Send
-              </button>
+              <button id="submit-button" class="flex flex-row mx-auto w-full mt-5" type="submit">
+                <a href="./src/pages/products.html" 
+                class="bg-primary text-white font-bold rounded-xl w-full text-xl px-5 py-4 transition-all duration-200 hover:bg-link hover:text-text">
+                    About Us</a>
+            </button>
             </form>
           </div>
           <div class="w-full lg:w-7/12">
