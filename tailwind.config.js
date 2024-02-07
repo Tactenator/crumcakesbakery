@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html"],
+  content: [
+    "**/*.{html, js}",
+    "**/**/*.{html, js}",
+    "./index.html",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
       screens: {
@@ -41,6 +46,7 @@ module.exports = {
   },
   plugins: [
     "prettier-plugin-tailwindcss",
+    require("flowbite/plugin"),
     require("tw-elements/dist/plugin.cjs"),
   ],
 };
