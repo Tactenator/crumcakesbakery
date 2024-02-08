@@ -991,6 +991,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 .dark input[type="range"]:active::-webkit-slider-thumb {
 }
 
+html {
+  font-family: "Fredoka", sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1431,6 +1435,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 2.25rem;
 }
 
+.h-\[25rem\] {
+  height: 25rem;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
@@ -1443,10 +1451,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 35px;
 }
 
-.h-\[45rem\] {
-  height: 45rem;
-}
-
 .h-\[70vh\] {
   height: 70vh;
 }
@@ -1457,6 +1461,18 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[35rem\] {
+  height: 35rem;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
 }
 
 .min-h-\[auto\] {
@@ -2087,7 +2103,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 .font-fredoka {
-  font-family: Fredoka, sans-serif;
+  font-family: 'Fredoka', "sans-serif";
 }
 
 .text-2xl {
@@ -2365,24 +2381,31 @@ input[type="range"]:active::-webkit-slider-thumb {
 @font-face {
   font-family: "Fredoka";
 
-  src: url('../public/fonts/Fredoka-Regular.ttf');
+  src: url("../public/fonts/Fredoka-Regular.ttf");
 }
 
-#hero, #blurb {
-  --mask:
-  radial-gradient(1.19rem at 50% calc(100% - 1.65rem),#000 99%,#0000 101%) calc(50% - 2rem) 0/4rem 100%,
-  radial-gradient(1.19rem at 50% calc(100% + 0.65rem),#0000 99%,#000 101%) 50% calc(100% - 1rem)/4rem 100% repeat-x;
+#hero,
+#blurb {
+  --mask: radial-gradient(
+        1.19rem at 50% calc(100% - 1.65rem),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 2rem) 0/4rem 100%,
+    radial-gradient(1.19rem at 50% calc(100% + 0.65rem), #0000 99%, #000 101%)
+      50% calc(100% - 1rem) / 4rem 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
 .modal {
-  box-shadow: 0 0 0 100vw rgba(0,0,0,.5);
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
 }
 
 .before\:absolute::before {
