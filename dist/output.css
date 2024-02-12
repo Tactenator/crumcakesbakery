@@ -1435,10 +1435,6 @@ html {
   height: 2.25rem;
 }
 
-.h-\[25rem\] {
-  height: 25rem;
-}
-
 .h-\[300px\] {
   height: 300px;
 }
@@ -1455,24 +1451,16 @@ html {
   height: 70vh;
 }
 
+.h-\[80\%\] {
+  height: 80%;
+}
+
 .h-auto {
   height: auto;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[35rem\] {
-  height: 35rem;
-}
-
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[80\%\] {
-  height: 80%;
 }
 
 .min-h-\[auto\] {
